@@ -1,0 +1,55 @@
+@import './fonts/fonts';
+// @import './variables';
+
+[data-theme="light"], [data-theme="dark"] {
+  min-height: 100vh;
+  background-color: var(--color-background-document);
+  padding: 0 100px;
+}
+
+[data-theme="light"] {
+  --color-main: #D07810;
+  --color-secondary: #1BD1AA;
+  --color-danger: #CC2828;
+  --color-inputs-background: #d9d9d91c;
+  --color-background-document: #ffffff;
+  --color-light-white: #E4E4E4;
+  --color-text: #333333;
+  --color-background-card: #00000040;
+  --shadow: 8px 8px 20px 2px rgba(0, 0, 0, 0.1);
+  
+  transition: 1s;
+}
+
+[data-theme="dark"] {
+  --color-main: #D07810;
+  --color-secondary: #1BD1AA;
+  --color-danger: #CC2828;
+  --color-inputs-background: #d9d9d91c;
+  --color-background-document: #242424;
+  --color-light-white: #E4E4E4;
+  --color-text: #D8D8D8;
+  --color-background-card: #00000040;
+  --shadow: 8px 8px 20px 2px rgba(0, 0, 0, 0.1);
+
+  transition: 1s;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: jost;
+  font-size: 62.5%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

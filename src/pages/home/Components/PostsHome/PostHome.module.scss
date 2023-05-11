@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  background-color: var(--color-background-card);
+  padding: 25px 50px;
+  border-radius: 53px;
+  box-shadow: var(--shadow);
+  transition: .6s;
+
+  &:hover {
+    transform: scale(1.01);
+    transition: .3s;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 2.4rem;
+      color: var(--color-light-white);
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
+
+      .author {
+        color: var(--color-light-white);
+      }
+
+      .date {
+        color: var(--color-secondary);
+        font-weight: 500;
+        text-align: end;
+      }
+    }
+  }
+
+  .body {
+    p {
+      overflow: hidden;
+      color: var(--color-light-white);
+      font-weight: 300;
+      font-size: 1.6rem;
+      display: -webkit-box; /* establecer el modo de visualización de la caja */
+      -webkit-box-orient: vertical; /* establecer la orientación vertical de la caja */
+      -webkit-line-clamp: 5; /* establecer la cantidad máxima de líneas */
+      text-overflow: ellipsis;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .categories {
+      display: flex;
+      gap: 10px;
+      
+      span {
+        color: var(--color-secondary);
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+
+    .likes {
+      display: flex;
+      gap: 5px;
+
+      .like {
+        width: 20px;
+        color: var(--color-main);
+      }
+
+      span {
+        color: var(--color-main);
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
