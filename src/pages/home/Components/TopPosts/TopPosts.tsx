@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Style from './TopPosts.module.scss'
+import connectDB from 'Utils/dbConnect'
+import Post from 'Models/Post'
 
 export default function TopPosts() {
   return (

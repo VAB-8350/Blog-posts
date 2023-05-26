@@ -31,7 +31,7 @@
     display: flex;
     gap: 27px;
     min-width: 200px;
-    justify-content: end;
+    justify-content: flex-end;
 
     button {
       background-color: transparent;
@@ -46,17 +46,17 @@
     }
 
     .theme {
-      width: 30px;
+      font-size: 30px;
       color: var(--color-secondary);
     }
 
     .plus {
-      width: 40px;
+      font-size: 30px;
       color: var(--color-main);
     }
     
     .user {
-      width: 40px;
+      font-size: 40px;
       color: var(--color-text);
     }
   }

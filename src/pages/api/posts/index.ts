@@ -2,7 +2,6 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import connectDB from 'Utils/dbConnect'
 import Post from '../../../models/Post'
 
-console.log('hola')
 connectDB()
 
 type Response = {

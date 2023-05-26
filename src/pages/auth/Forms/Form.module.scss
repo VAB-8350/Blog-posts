@@ -1,0 +1,64 @@
+.form {
+  background-color: var(--color-background-card);
+  padding: 60px 30px 34px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 850px;
+
+  div {
+    position: relative;
+
+    label {
+      position: absolute;
+      top: 19px;
+      left: 28px;
+      font-size: 1.6rem;
+      color: var(--color-light-white);
+      transition: .6s;
+    }
+
+    .hasContent, input:focus + label  {
+      top: -30px;
+      left: 20px;
+      transition: .6s;
+    }
+  
+    input {
+      width: 100%;
+      background-color: var(--color-inputs-background);
+      border: none;
+      outline: none;
+      border-radius: 100px;
+      font-size: 1.6rem;
+      padding: 19px 28px;
+      color: var(--color-light-white);
+    }
+
+    p {
+      position: absolute;
+      color: var(--color-danger);
+      font-size: 1.4rem;
+      left: 25px;
+      bottom: -23px;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border-radius: 100px;
+    color: var(--color-main);
+    font-size: 1.6rem;
+    padding: 19px;
+    border: 2px solid var(--color-main);
+    opacity: .7;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+
+}
